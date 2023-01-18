@@ -5,6 +5,6 @@ for value in range (00, 100):
             base = 0
         else:
             base = ""
-        print(f"{base}{value}, ", end="")
+        print("{}{}, ".format(base, value), end="")
     else:
-        print(f"{value}")
+        print("{}".format(value))
