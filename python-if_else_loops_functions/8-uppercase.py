@@ -9,6 +9,3 @@ def uppercase(str):
             letter = chr(num)
         print("{}".format(letter), end="")
     print("")
-
-uppercase("best")
-uppercase("Best School 98 Battery street")
