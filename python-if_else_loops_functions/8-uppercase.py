@@ -7,7 +7,7 @@ def uppercase(str):
             letter = chr(num)
         else:
             letter = chr(num)
-        print(letter, end="")
+        print("{}".format(letter), end="")
     print("")
 
 uppercase("best")
