@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-for value in range (00, 100):
+for value in range(00, 100):
     if value < 99:
         if value < 10:
             base = 0
