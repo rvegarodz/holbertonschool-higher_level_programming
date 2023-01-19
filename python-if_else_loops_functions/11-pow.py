@@ -13,5 +13,3 @@ def pow(a, b):
             base *= a
         result = 1/base
         return result
-
-print(pow(100, -2))
