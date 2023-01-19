@@ -5,6 +5,3 @@ def print_last_digit(number):
 
     print(last_digit, end="")
     return last_digit
-
-r = print_last_digit(98)
-print(r)
