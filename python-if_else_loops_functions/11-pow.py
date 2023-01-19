@@ -4,5 +4,3 @@ def pow(a, b):
         for i in range(b):
             result = a * a
         return result
-
-print(pow(98, 2))
