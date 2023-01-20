@@ -6,6 +6,6 @@ if __name__ == "__main__":
 
     for name in names:
         if name[3] == "__":
-            continue
+            pass
         else:
             print("{}".format(name))
