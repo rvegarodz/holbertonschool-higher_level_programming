@@ -4,7 +4,12 @@ def print_matrix_integer(matrix=[[]]):
         print("")
     else:
         for row in matrix:
+            len_row = len(row)
+            count = 0
             for value in row:
-                print("{:d}".format(value), end="")
-                print("", end=" ")
+                count = count + 1
+                if count < len_row:
+                    print("{:d}".format(value), end=" ")
+                elif count == len_row:
+                    print("{:d}".format(value), end="")
             print("")
