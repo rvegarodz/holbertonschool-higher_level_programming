@@ -7,7 +7,7 @@ def new_in_list(my_list, idx, element):
         for values in my_list:
             if idx < 0:
                 return my_list
-            elif idx > 0:
+            elif idx => 0:
                 copy_list = my_list.copy()
                 if idx < len_list:
                     copy_list[idx] = element
