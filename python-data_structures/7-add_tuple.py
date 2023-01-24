@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def add_tuple(tuple_a=(), tuple_b=()):
     tuple_copy = (0, 0)
-    
+
     if len(tuple_a) <= 0:
         value_a = tuple_copy[0]
         value_b = tuple_copy[1]
