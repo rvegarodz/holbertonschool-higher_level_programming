@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
     roman_dictionary = {"I": 1,"V": 5,"X": 10,"L": 50,"C": 100,"D": 500,"M": 1000,}
-    str_len = len(roman_string)
+    if roman_string:
+        str_len = len(roman_string)
     if str_len == 1:
         return roman_dictionary.get(roman_string)
     else:
@@ -18,4 +19,4 @@ def roman_to_int(roman_string):
                 total_sum += i
             old_num = i
         
-        return total_sum
+    return total_sum
