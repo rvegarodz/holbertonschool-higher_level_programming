@@ -1,4 +1,4 @@
-# Files created to High Level Programming Projects (4th month)
+# High Level Programming Projects
 
 ### [Hello World](https://github.com/rvegarodz/holbertonschool-higher_level_programming/tree/main/python-hello_world) project focus on:
 - How to use the Python interpreter
