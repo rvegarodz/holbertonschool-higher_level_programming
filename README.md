@@ -1,12 +1,12 @@
 # Files created to High Level Programming Projects (4th month)
 
-### Hello World project focus on:
+### [Hello World](https://github.com/rvegarodz/holbertonschool-higher_level_programming/tree/main/python-hello_world) project focus on:
 - How to use the Python interpreter
 - How to print text and variables using print
 - How to use strings
 - What are indexing and slicing in Python
 
-### If/Else, loops & functions project focus on:
+### [If/Else, Loops & Functions](https://github.com/rvegarodz/holbertonschool-higher_level_programming/tree/main/python-if_else_loops_functions) project focus on:
 - How to use the if, if ... else statements
 - How to affect values to variables
 - How to use the while and for loops
@@ -20,7 +20,7 @@
 - What’s a traceback
 - What are the arithmetic operators and how to use them
 
-### Import & Modules project focus on:
+### [Import & Modules](https://github.com/rvegarodz/holbertonschool-higher_level_programming/tree/main/python-import_modules) project focus on:
 - How to import functions from another file
 - How to use imported functions
 - How to create a module
@@ -28,7 +28,7 @@
 - How to prevent code in your script from being executed when imported
 - How to use command line arguments with your Python programs
 
-### Data Structures: Lists & Tuples project focus on:
+### [Data Structures: Lists & Tuples](https://github.com/rvegarodz/holbertonschool-higher_level_programming/tree/main/python-data_structures) project focus on:
 - What are lists and how to use them
 - What are the differences and similarities between strings and lists
 - What are the most common methods of lists and how to use them
@@ -41,7 +41,7 @@
 - What is sequence unpacking
 - What is the del statement and how to use it
 
-### More Data Structures: Set & Dictionary project focus on:
+### [More Data Structures: Set & Dictionary](https://github.com/rvegarodz/holbertonschool-higher_level_programming/tree/main/python-more_data_structures) project focus on:
 - What are sets and how to use them
 - What are the most common methods of set and how to use them
 - When to use sets versus lists
@@ -53,7 +53,7 @@
 - What is a lambda function
 - What are the map, reduce and filter functions
 
-### Exceptions project focus on:
+### [Exceptions](https://github.com/rvegarodz/holbertonschool-higher_level_programming/tree/main/python-exceptions) project focus on:
 - What’s the difference between errors and exceptions
 - What are exceptions and how to use them
 - When do we need to use exceptions
