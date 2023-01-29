@@ -1,4 +1,4 @@
-# Data Structures: Lists, Tuples Project
+# Data Structures: Lists & Tuples Project
 
 - File 0 - Python function that prints all integers of a list
 - File 1 - Python function that retrieves an element from a list like in C
