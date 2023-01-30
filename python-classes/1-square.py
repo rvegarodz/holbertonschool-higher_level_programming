@@ -1,12 +1,8 @@
 #!/usr/bin/python3
-"""Di"""
+"""This module provide a class named Square"""
 
 
 class Square:
-    """Defines a class as Square
-    Args:
-        size: 
-        """
+    """Defines a class as Square with private argument named size"""
     def __init__(self, size):
-        self.__Square__size = size
-    
+        self.__size = size
