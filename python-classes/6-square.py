@@ -55,10 +55,7 @@ class Square:
         return _area
 
     def my_print(self):
-        if self.__size == 0 and self.__position[1] == 0:
-            if self.__position[0] > 0:
-                for idx_position in range(self.__position[0]):
-                    print("")
+        if self.__size == 0:
             print("")
         else:
             if self.__position[1] > 0:
