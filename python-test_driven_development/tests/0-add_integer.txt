@@ -46,4 +46,6 @@ Now use it:
     OverflowError: (34, 'Numerical result out of range')
 
     >>> add_integer(float('NaN'), 2)
+    Traceback (most recent call last):
+    ...
     ValueError: cannot convert float NaN to integer
