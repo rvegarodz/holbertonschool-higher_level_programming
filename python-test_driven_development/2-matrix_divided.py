@@ -19,9 +19,11 @@ def matrix_divided(matrix, div):
                 raise TypeError(msg2)
     for idx in range(og_len):
         for idx_l in range(len(matrix[idx])):
-            if type(matrix[idx][idx_l]) != int and type(matrix[idx][idx_l]) != float:
+            if type(matrix[idx][idx_l]) != int:
                 raise TypeError(msg1)
-            
+            elif type(matrix[idx][idx_l]) != float:
+                raise TypeError(msg1)
+
     def divide(og_matrix):
         """ COMMENT """
         matrix_copy = []
