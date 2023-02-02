@@ -43,7 +43,7 @@ Now use it:
     >>> matrix_divided([None], 1)
     Traceback (most recent call last):
     ...
-    TypeError: 'NoneType' object is not iterable
+    TypeError: object of type 'NoneType' has no len()
 
     >>> matrix_divided([["Holberton", "School", "98"],[4, 5, 6]], 3)
     Traceback (most recent call last):

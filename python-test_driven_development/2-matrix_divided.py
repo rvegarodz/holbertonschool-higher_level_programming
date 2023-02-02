@@ -22,6 +22,7 @@ def matrix_divided(matrix, div):
             if type(matrix[idx][idx_l]) != int:
                 if type(matrix[idx][idx_l]) != float:
                     raise TypeError(msg1)
+
     def divide(og_matrix):
         """ COMMENT """
         matrix_copy = []
