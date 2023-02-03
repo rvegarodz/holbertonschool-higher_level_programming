@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""This module provide a class named Square"""
+"""This module provide a class named Rectangle"""
 
 
 class Rectangle:
-    """Defines a class as Square with privates arguments (size and position).
+    """Defines a class as Rectangle with privates arguments (width and height).
 
     Args:
         param1: width
