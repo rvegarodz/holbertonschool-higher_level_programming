@@ -16,4 +16,3 @@ def text_indentation(text):
                 continue
             else:
                 print(text[idx], end='')
-            
