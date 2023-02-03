@@ -45,7 +45,27 @@ Now use it:
     ...
     OverflowError: (34, 'Numerical result out of range')
 
-    >>> add_integer(float('NaN'), 2)
+    >>> add_integer(float('inf'), float('-inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(-3r, 6)
+    Traceback (most recent call last):
+    ...
+    SyntaxError: invalid syntax
+
+    >>> add_integer(777, 69e420**4)
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(float('NaN'), 7)
     Traceback (most recent call last):
     ...
     ValueError: cannot convert float NaN to integer
