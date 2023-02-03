@@ -1,14 +1,13 @@
-
 #!/usr/bin/python3
-"""Unittest for max_integer([..])"""
+"""This module provide a UnitTest for max_integer([])"""
 
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
 class TestMaxInteger(unittest.TestCase):
-    """This class define a unittest file"""
+    """A testcase is created by subclassing unittest.TestCase"""
     def test_max_integer(self):
-        """This function define a test cases for max_integer function"""
+        """This method define some tests for max_integer([])"""
         self.assertEqual(max_integer([1, 2, 3, 4, 5]), 5)
         self.assertEqual(max_integer([1, 2, 3, 7, 5, 4, 6]), 7)
         self.assertEqual(max_integer([1, 2, 5, 8, 9, 4]), 9)
