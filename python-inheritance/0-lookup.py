@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module provide a class named Rectangle"""
+"""This module provide a function called lookup"""
 
 
 def lookup(obj):
