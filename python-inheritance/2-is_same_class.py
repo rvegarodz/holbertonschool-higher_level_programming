@@ -4,6 +4,9 @@
 
 def is_same_class(obj, a_class):
     """COMMENT"""
+    if a_class is not bool:
+        if obj is bool:
+            return False
     if a_class is not object:
         if isinstance(obj, a_class) is True:
             return True
