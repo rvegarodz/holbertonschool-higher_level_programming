@@ -97,4 +97,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """Magic method that return string"""
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.__width}/{self.__height}"
+        __id_msg = (f"({self.id})")
+        __x_y_msg = (f"{self.x}/{self.y}")
+        __w_h_msg = (f"{self.__width}/{self.__height}")
+        return f"[Rectangle] {__id_msg} {__x_y_msg} - {__w_h_msg}"
