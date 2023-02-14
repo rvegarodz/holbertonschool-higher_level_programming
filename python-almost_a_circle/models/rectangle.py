@@ -106,16 +106,29 @@ class Rectangle(Base):
         __w_h_msg = (f"{self.__width}/{self.__height}")
         return f"[Rectangle] {__id_msg} {__x_y_msg} - {__w_h_msg}"
 
-    def update (self, *args):
+    def update(self, *args, **kwargs):
         """Method that update arguments of class"""
-        for idx in range(len(args)):
-            if idx == 0:
-                self.id = args[idx]
-            if idx == 1:
-                self.__width = args[idx]
-            if idx == 2:
-                self.__height = args[idx]
-            if idx == 3:
-                self.__x = args[idx]
-            if idx == 4:
-                self.__y = args[idx]
+        if args:
+            for idx in range(len(args)):
+                if idx == 0:
+                    self.id = args[idx]
+                if idx == 1:
+                    self.__width = args[idx]
+                if idx == 2:
+                    self.__height = args[idx]
+                if idx == 3:
+                    self.__x = args[idx]
+                if idx == 4:
+                    self.__y = args[idx]
+        else:
+            for value in kwargs:
+                if value == "id":
+                    self.id = kwargs[value]
+                if value == "width":
+                    self.__width = kwargs[value]
+                if value == "height":
+                    self.__height = kwargs[value]
+                if value == "x":
+                    self.__x = kwargs[value]
+                if value == "y":
+                    self.__y = kwargs[value]
