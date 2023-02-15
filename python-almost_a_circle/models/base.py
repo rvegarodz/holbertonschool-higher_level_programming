@@ -34,3 +34,11 @@ class Base:
                 tmp_lst.append(values.to_dictionary())
         with open(filename, "w") as file:
             file.write(cls.to_json_string(tmp_lst))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Method returns list of the JSON str repr"""
+        if json_string == None or json_string == "":
+            return []
+        else:
+            return json.loads(json_string)
