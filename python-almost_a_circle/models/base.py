@@ -3,6 +3,7 @@
 
 
 import json
+from os import path
 
 class Base:
     """Base class of all the other classes of the project"""
@@ -45,9 +46,23 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
+        """Method that returns an instance with all attributes"""
         if cls.__name__ == "Square":
             instance = cls(1)
         elif cls.__name__ == "Rectangle":
             instance = cls(1, 1)
         cls.update(instance, **dictionary)
         return instance
+
+    @classmethod
+    def load_from_file(cls):
+        """Method that returns a list of instance"""
+        filename = f"{cls.__name__}" + ".json"
+        if path.exists(filename) is False:
+            return []
+        tmp_lst = []
+        with open(filename) as file:
+            tmp_dict = cls.from_json_string(file.read())
+            for value in tmp_dict:
+                tmp_lst.append(cls.create(**value))
+            return tmp_lst
