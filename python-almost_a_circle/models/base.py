@@ -26,7 +26,7 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """COMMENT"""
+        """Method write a JSON str repr of ist_objs to a file"""
         filename = f"{cls.__name__}" + ".json"
         tmp_lst = []
         if list_objs:
