@@ -134,4 +134,5 @@ class Rectangle(Base):
                     self.__y = kwargs[value]
     
     def to_dictionary(self):
+        """Function returns a dict repr of a Rect"""
         return {"x": self.__x, "y": self.__y, "id": self.id, "height": self.__height, "width": self.__width}
