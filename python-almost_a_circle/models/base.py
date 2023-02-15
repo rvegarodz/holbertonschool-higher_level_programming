@@ -2,6 +2,8 @@
 """Module provide a parent class called Base"""
 
 
+import json
+
 class Base:
     """Base class of all the other classes of the project"""
 
@@ -13,3 +15,6 @@ class Base:
             self.id = Base.__nb_objects
         else:
             self.id = id
+        
+    def to_json_string(list_dictionaries):
+        return json.dumps(list_dictionaries)
