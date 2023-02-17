@@ -135,4 +135,11 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """Function returns a dict repr of a Rect"""
-        return {"x": self.__x, "y": self.__y, "id": self.id, "height": self.__height, "width": self.__width}
+        dict_repr = {
+            "x": self.__x,
+            "y": self.__y,
+            "id": self.id,
+            "height": self.__height,
+            "width": self.__width
+            }
+        return dict_repr
