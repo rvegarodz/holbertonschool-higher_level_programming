@@ -25,7 +25,8 @@ class Square(Rectangle):
                 if idx == 0:
                     self.id = args[idx]
                 if idx == 1:
-                    super(__class__, self.__class__).width.__set__(self, args[idx])
+                    (super(__class__, self.__class__).
+                     width.__set__(self, args[idx]))
                 if idx == 2:
                     super(__class__, self.__class__).x.__set__(self, args[idx])
                 if idx == 3:
