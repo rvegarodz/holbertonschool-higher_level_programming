@@ -14,12 +14,13 @@ def get_states(argv):
     i_db = sys.argv[3]
 
     # Function for connecting to MySQL database
-    database = MySQLdb.connect(host="localhost",
-     port=3306,
-     user=i_username,
-     passwd=i_password,
-     db=i_db,
-     charset="utf8")
+    database = (MySQLdb.connect
+                (host="localhost",
+                 port=3306,
+                 user=i_username,
+                 passwd=i_password,
+                 db=i_db,
+                 charset="utf8"))
 
     # Making Cursor Object For Query Execution
     db_cursor = database.cursor()
