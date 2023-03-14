@@ -28,7 +28,7 @@ def filter_states(argv):
     db_cursor = database.cursor()
 
     # Executing Query
-    query = "SELECT * FROM 'states' WHERE name LIKE BINARY '{}'"
+    query = "SELECT * FROM states WHERE name LIKE BINARY '{}'"
     db_cursor.execute(query.format(ui_name))
 
     # Fetching Data
