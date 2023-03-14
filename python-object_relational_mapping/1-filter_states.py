@@ -1,18 +1,17 @@
 #!/usr/bin/python3
-'''Script that lists all states with a name starting with N (upper N)
-from the database hbtn_0e_0_usa'''
+'''Script that lists all states from the database hbtn_0e_0_usa'''
 # Module for Connecting To MySQL database
 import MySQLdb
-from sys import argv
+import sys
 
 
 def filter_states(argv):
     '''Function that connect and fetch data'''
 
     # Input Arguments
-    i_username = argv[1]
-    i_password = argv[2]
-    i_db = argv[3]
+    i_username = sys.argv[1]
+    i_password = sys.argv[2]
+    i_db = sys.argv[3]
 
     # Function for connecting to MySQL database
     database = (MySQLdb.connect
@@ -44,4 +43,4 @@ def filter_states(argv):
 
 
 if __name__ == "__main__":
-    filter_states(argv[1:])
+    filter_states(sys.argv[1:])
