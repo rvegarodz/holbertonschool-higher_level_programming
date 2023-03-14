@@ -13,7 +13,7 @@ def filter_states(argv):
     i_username = sys.argv[1]
     i_password = sys.argv[2]
     i_db = sys.argv[3]
-    ui_name = sys.argv[4]
+    ui_name = {sys.argv[4]}
 
     # Function for connecting to MySQL database
     database = (MySQLdb.connect
@@ -28,8 +28,8 @@ def filter_states(argv):
     db_cursor = database.cursor()
 
     # Executing Query
-    query = "SELECT * FROM states WHERE name LIKE BINARY '{}'"
-    db_cursor.execute(query.format(ui_name))
+    query = "SELECT * FROM states WHERE name LIKE BINARY %s"
+    db_cursor.execute(query, ui_name)
 
     # Fetching Data
     query_rows = db_cursor.fetchall()
