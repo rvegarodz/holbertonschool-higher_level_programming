@@ -26,7 +26,9 @@ def get_cities_states(argv):
     db_cursor = database.cursor()
 
     # Executing Query
-    query = "SELECT cities.id, cities.name, states.name FROM cities INNER JOIN states ON cities.state_id = states.id"
+    q_select = "SELECT cities.id, cities.name, states.name FROM cities "
+    q_join = "INNER JOIN states ON cities.state_id = states.id"
+    query = q_select + q_join
     db_cursor.execute(query)
 
     # Fetching Data
