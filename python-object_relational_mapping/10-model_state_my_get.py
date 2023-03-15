@@ -15,10 +15,8 @@ if __name__ == "__main__":
     engine = create_engine(db_api.format(usr, pswd, db), pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    results = session.query(State).filter(State.name.like(state))
-
-    for states in results:
-        if states is not None:
-            print(states.id)
-        else:
-            print("Not found")
+    states = session.query(State).filter(State.name.like(state)).scalar()
+    if states is not None:
+        print(states.id)
+    else:
+        print("Not found")
