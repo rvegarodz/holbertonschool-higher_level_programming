@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''DOCUMENTATION'''
+'''Module provide a class that map to State table'''
 # Module for Connecting To MySQL database
 import sys
 from sqlalchemy import create_engine
@@ -10,7 +10,7 @@ Base = declarative_base()
 
 
 class State(Base):
-    ''' DOCUMENTATION '''
+    '''Class mapping table Sate'''
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
     name = Column(String(128))
