@@ -15,7 +15,7 @@ if __name__ == "__main__":
     engine = create_engine(db_api.format(usr, pswd, db), pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    obj = State(name = state_nm)
+    obj = State(name=state_nm)
     session.add(obj)
     session.commit()
     results = session.query(State).distinct().count()
