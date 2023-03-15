@@ -15,7 +15,9 @@ if __name__ == "__main__":
     engine = create_engine(db_api.format(usr, pswd, db), pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    result = session.query(City, State).filter(City.state_id == State.id).order_by(City.id).all()
+    result = (session.query(City, State)
+              .filter(City.state_id == State.id)
+              .order_by(City.id).all())
 
     for cities, states in result:
         print("{}: ({}) {}".format(states.name, cities.id, cities.name))
