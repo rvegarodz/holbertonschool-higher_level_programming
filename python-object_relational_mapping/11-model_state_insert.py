@@ -18,7 +18,5 @@ if __name__ == "__main__":
     obj = State(name = state_nm)
     session.add(obj)
     session.commit()
-    results = session.query(State).distinct()
-    for states in results:
-        idx = "{}:"
-        print(idx.format(states.id), states.name)
+    results = session.query(State).distinct().count()
+    print(results)
