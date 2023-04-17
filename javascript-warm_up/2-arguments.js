@@ -5,5 +5,5 @@ if (variables.length <= 2) {
 } else if (variables.length === 3) {
   console.log('Argument found');
 } else if (variables.length > 3) {
-  console.log('Arguments founds');
+  console.log('Arguments found');
 }
