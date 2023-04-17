@@ -7,6 +7,6 @@ if (variables.length <= 2) {
   if (isNaN(variables[2])) {
     console.log(error);
   } else {
-    console.log(variables[2]);
+    console.log('My number:', variables[2]);
   }
 }
