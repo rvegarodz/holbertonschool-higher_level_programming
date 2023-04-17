@@ -6,5 +6,5 @@ if (variables.length < 4) {
   const array = variables.slice(3);
   const aInt = array.map(str => parseInt(str));
   aInt.sort((a, b) => b - a);
-  console.log(aInt[0]);
+  console.log(aInt[1]);
 }
