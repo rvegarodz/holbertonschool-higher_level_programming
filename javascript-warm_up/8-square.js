@@ -9,6 +9,8 @@ if (variable) {
       }
       console.log(row);
     }
+  } else {
+    console.log('Missing size');
   }
 } else {
   console.log('Missing size');
