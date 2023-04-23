@@ -1,29 +1,51 @@
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
+# Holberton School Higher Level Programming - JavaScript Web jQuery
 
-    - Why JQuery make front-end programming so easy
-    - How to select HTML elements in JavaScript
-    - How to select HTML elements with JQuery
-    - What are differences between ID, class and tag name selectors
-    - How to modify an HTML element style
-    - How to get and update an HTML element content
-    - How to modify the DOM
-    - How to make a GET request with JQuery Ajax
-    - How to make a POST request with JQuery Ajax
-    - How to listen/bind to DOM events
-    - How to listen/bind to user events
+This repository contains JavaScript code written using the jQuery library as part of the Higher Level Programming curriculum at Holberton School.
 
-Resources used:
+## Files
 
-    - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
-    - https://jquery-tutorial.net/selectors/using-elements-ids-and-classes/
-    - https://jquery-tutorial.net/dom-manipulation/getting-and-setting-content/
-    - https://jquery-tutorial.net/dom-manipulation/getting-and-setting-css-classes/
-    - https://jquery-tutorial.net/dom-manipulation/the-append-and-prepend-methods/
-    - https://oscarotero.com/jquery/
-    - https://jquery.com/
-    - https://api.jquery.com/
-    - https://learn.jquery.com/ajax/
-    - https://jquery-tutorial.net/ajax/introduction/
-    - https://jquery-tutorial.net/ajax/the-get-and-post-methods/
-    - https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong
-    - 
+The repository contains the following files:
+
+### [0-script.js](./0-script.js)
+
+This file contains a JavaScript script that updates the text color of the HTML tag `HEADER` to red (#FF0000).
+
+### [1-script.js](./1-script.js)
+
+This file contains a JavaScript script that updates the text color of the HTML tag `HEADER` to red (#FF0000) using jQuery.
+
+### [2-script.js](./2-script.js)
+
+This file contains a JavaScript script that updates the text color of the HTML tag `HEADER` to red (#FF0000) when the user clicks on the tag `DIV#red_header`.
+
+### [3-script.js](./3-script.js)
+
+This file contains a JavaScript script that adds the class `red` to the HTML tag `HEADER` when the user clicks on the tag `DIV#red_header`.
+
+### [4-script.js](./4-script.js)
+
+This file contains a JavaScript script that toggles the class of the HTML tag `HEADER` between `red` and `green` when the user clicks on the tag `DIV#toggle_header`.
+
+### [5-script.js](./5-script.js)
+
+This file contains a JavaScript script that adds an element to the list `UL.my_list` when the user clicks on the tag `DIV#add_item`.
+
+### [6-script.js](./6-script.js)
+
+This file contains a JavaScript script that updates the text of the HTML tag `HEADER` to "New Header!!!" when the user clicks on the tag `DIV#update_header`.
+
+### [7-script.js](./7-script.js)
+
+This file contains a JavaScript script that fetches and replaces the `DIV#character` with a character from a JSON file using jQuery and the `$.getJSON` function.
+
+### [8-script.js](./8-script.js)
+
+This file contains a JavaScript script that fetches and lists all movie titles from a JSON file using jQuery and the `$.getJSON` function.
+
+### [9-script.js](./9-script.js)
+
+This file contains a JavaScript script that fetches and displays the translation of "Hello" in different languages using jQuery and the `$.getJSON` function.
+
+## Author
+
+This repository is maintained by Rafael O. Vega Rodriguez.
